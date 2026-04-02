@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, BookOpen, Download } from "lucide-react";
 import TypingText from "./TypingText";
 import FlutterLogo from "./FlutterLogo";
+import profileImage from "@/assets/profile.png";
 
-const PROFILE_IMAGE = "https://drive.google.com/uc?export=view&id=1EDMFr6ie-sEsErVcb0TMqZj-tNZ4-pY1";
+const PROFILE_IMAGE = profileImage;
 const CV_LINK = "https://drive.google.com/file/d/1UThcMv8R2ovIDyLRfKqgrrYVGdIauv2W/view?usp=sharing";
 
 const socials = [

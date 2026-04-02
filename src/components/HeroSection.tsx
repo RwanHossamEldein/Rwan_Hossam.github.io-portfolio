@@ -61,10 +61,28 @@ const HeroSection = () => (
     </div>
 
     <div className="container mx-auto px-6 relative z-10">
-      <div className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-20">
+      <div className="flex flex-col items-center gap-12">
+        {/* Profile Image */}
+        <motion.div
+          className="relative"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+        >
+          <div className="animate-float">
+            <div className="relative w-56 h-56 sm:w-72 sm:h-72 rounded-full overflow-hidden neon-border animate-neon-pulse">
+              <img
+                src={PROFILE_IMAGE}
+                alt="Rwan Hossam Eldein"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </motion.div>
+
         {/* Text */}
         <motion.div
-          className="flex-1 text-center md:text-left"
+          className="flex-1 text-center"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}

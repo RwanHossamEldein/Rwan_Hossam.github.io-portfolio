@@ -106,7 +106,7 @@ const HeroSection = () => (
             I build scalable and user-friendly mobile applications.
           </p>
 
-          <div className="flex flex-wrap gap-4 justify-center md:justify-start mb-8">
+          <div className="flex flex-wrap gap-4 justify-center mb-8">
             <a href="#projects" className="neon-button inline-flex items-center gap-2">
               View Projects
             </a>

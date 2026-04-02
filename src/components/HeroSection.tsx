@@ -123,7 +123,7 @@ const HeroSection = () => (
             </a>
           </div>
 
-          <div className="flex gap-4 justify-center md:justify-start">
+          <div className="flex gap-4 justify-center">
             {socials.map(({ icon: Icon, href, label }) => (
               <motion.a
                 key={label}

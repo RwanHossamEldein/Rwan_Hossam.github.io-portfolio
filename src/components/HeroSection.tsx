@@ -102,7 +102,7 @@ const HeroSection = () => (
               className="font-mono text-lg text-muted-foreground"
             />
           </div>
-          <p className="text-muted-foreground max-w-md mb-8 leading-relaxed">
+          <p className="text-muted-foreground max-w-md mx-auto mb-8 leading-relaxed">
             I build scalable and user-friendly mobile applications.
           </p>
 

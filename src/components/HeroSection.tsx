@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Download } from "lucide-react";
+import { Github, Linkedin, Mail, Download, Moon, Sun } from "lucide-react";
 import TypingText from "./TypingText";
 import FlutterLogo from "./FlutterLogo";
 import profileImage from "@/assets/profile.png";
@@ -18,8 +18,44 @@ const socials = [
   { icon: Github, href: "https://github.com/RwanHossamEldein", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/rwan-hossam-08ba39295/", label: "LinkedIn" },
   { icon: Mail, href: "mailto:rwanhossam0@gmail.com", label: "Email" },
-  { icon: MediumIcon, href: "https://medium.com/@RwanHossam", label: "Medium", custom: true },
+  { icon: MediumIcon, href: "https://medium.com/@RwanHossam", label: "Medium" },
 ];
+
+const ThemeToggleButton = () => {
+  const [isDark, setIsDark] = useState(true);
+
+  useEffect(() => {
+    const stored = localStorage.getItem("theme");
+    if (stored === "light") {
+      setIsDark(false);
+      document.documentElement.classList.add("light");
+    }
+  }, []);
+
+  const toggle = () => {
+    setIsDark((prev) => {
+      const next = !prev;
+      if (next) {
+        document.documentElement.classList.remove("light");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.documentElement.classList.add("light");
+        localStorage.setItem("theme", "light");
+      }
+      return next;
+    });
+  };
+
+  return (
+    <button
+      onClick={toggle}
+      className="rounded-full p-2 transition-colors hover:bg-muted"
+      aria-label="Toggle theme"
+    >
+      {isDark ? <Sun className="h-4 w-4 text-muted-foreground" /> : <Moon className="h-4 w-4 text-muted-foreground" />}
+    </button>
+  );
+};
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -53,6 +89,10 @@ const Navbar = () => {
               {l}
             </a>
           ))}
+          <ThemeToggleButton />
+        </div>
+        <div className="md:hidden">
+          <ThemeToggleButton />
         </div>
       </div>
     </motion.nav>
@@ -137,7 +177,7 @@ const HeroSection = () => (
               <img
                 src={PROFILE_IMAGE}
                 alt="Rwan Hossam"
-                className="w-full h-full object-cover object-[center_30%]"
+                className="w-full h-full object-cover object-[center_15%]"
               />
             </div>
           </div>

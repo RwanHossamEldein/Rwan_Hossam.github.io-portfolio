@@ -6,94 +6,93 @@
 
 @layer base {
   :root {
-    --background: 240 10% 3%;
-    --foreground: 0 0% 95%;
+    --background: 230 15% 5%;
+    --foreground: 220 15% 92%;
 
-    --card: 240 8% 6%;
-    --card-foreground: 0 0% 95%;
+    --card: 230 12% 8%;
+    --card-foreground: 220 15% 92%;
 
-    --popover: 240 8% 6%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 230 12% 8%;
+    --popover-foreground: 220 15% 92%;
 
-    --primary: 221 83% 53%;
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 271 81% 56%;
+    --secondary: 262 83% 58%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 240 6% 12%;
-    --muted-foreground: 240 5% 55%;
+    --muted: 230 10% 14%;
+    --muted-foreground: 220 10% 55%;
 
-    --accent: 221 83% 53%;
+    --accent: 217 91% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 6% 15%;
-    --input: 240 6% 15%;
-    --ring: 221 83% 53%;
+    --border: 230 10% 18%;
+    --input: 230 10% 18%;
+    --ring: 217 91% 60%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens */
-    --neon-blue: 221 83% 53%;
-    --neon-purple: 271 81% 56%;
-    --neon-glow: 0 0 20px hsl(221 83% 53% / 0.4), 0 0 40px hsl(221 83% 53% / 0.2);
-    --neon-glow-strong: 0 0 20px hsl(221 83% 53% / 0.6), 0 0 60px hsl(221 83% 53% / 0.3), 0 0 100px hsl(221 83% 53% / 0.1);
-    --neon-glow-purple: 0 0 20px hsl(271 81% 56% / 0.4), 0 0 40px hsl(271 81% 56% / 0.2);
-    --glass-bg: hsl(240 8% 8% / 0.6);
-    --glass-border: hsl(240 6% 20% / 0.5);
-    --glass-hover: hsl(240 8% 10% / 0.8);
-    --surface-dark: 240 10% 4%;
+    --neon-blue: 217 91% 60%;
+    --neon-purple: 262 83% 58%;
+    --neon-glow: 0 0 20px hsl(217 91% 60% / 0.4), 0 0 40px hsl(217 91% 60% / 0.2);
+    --neon-glow-strong: 0 0 20px hsl(217 91% 60% / 0.6), 0 0 60px hsl(217 91% 60% / 0.3), 0 0 100px hsl(217 91% 60% / 0.1);
+    --neon-glow-purple: 0 0 20px hsl(262 83% 58% / 0.4), 0 0 40px hsl(262 83% 58% / 0.2);
+    --glass-bg: hsl(230 12% 9% / 0.7);
+    --glass-border: hsl(230 10% 22% / 0.5);
+    --glass-hover: hsl(230 12% 12% / 0.85);
+    --surface-dark: 230 15% 4%;
 
-    --sidebar-background: 240 10% 3%;
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 221 83% 53%;
+    --sidebar-background: 230 15% 5%;
+    --sidebar-foreground: 220 15% 92%;
+    --sidebar-primary: 217 91% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 6% 12%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 240 6% 15%;
-    --sidebar-ring: 221 83% 53%;
+    --sidebar-accent: 230 10% 14%;
+    --sidebar-accent-foreground: 220 15% 92%;
+    --sidebar-border: 230 10% 18%;
+    --sidebar-ring: 217 91% 60%;
   }
 
   .light {
-    --background: 0 0% 98%;
-    --foreground: 240 10% 10%;
+    --background: 220 20% 96%;
+    --foreground: 230 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 10%;
+    --card: 220 20% 99%;
+    --card-foreground: 230 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 10%;
+    --popover: 220 20% 99%;
+    --popover-foreground: 230 25% 15%;
 
-    --primary: 221 83% 53%;
+    --primary: 217 91% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 271 81% 56%;
+    --secondary: 262 83% 50%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 240 5% 92%;
-    --muted-foreground: 240 5% 40%;
+    --muted: 220 15% 91%;
+    --muted-foreground: 220 10% 42%;
 
-    --accent: 221 83% 53%;
+    --accent: 217 91% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 6% 85%;
-    --input: 240 6% 85%;
-    --ring: 221 83% 53%;
+    --border: 220 15% 87%;
+    --input: 220 15% 87%;
+    --ring: 217 91% 50%;
 
-    --neon-blue: 221 83% 53%;
-    --neon-purple: 271 81% 56%;
-    --neon-glow: 0 0 15px hsl(221 83% 53% / 0.25), 0 0 30px hsl(221 83% 53% / 0.1);
-    --neon-glow-strong: 0 0 15px hsl(221 83% 53% / 0.4), 0 0 40px hsl(221 83% 53% / 0.2);
-    --neon-glow-purple: 0 0 15px hsl(271 81% 56% / 0.25), 0 0 30px hsl(271 81% 56% / 0.1);
-    --glass-bg: hsl(0 0% 100% / 0.7);
-    --glass-border: hsl(240 6% 80% / 0.5);
-    --glass-hover: hsl(0 0% 100% / 0.9);
+    --neon-blue: 217 91% 50%;
+    --neon-purple: 262 83% 50%;
+    --neon-glow: 0 0 12px hsl(217 91% 50% / 0.2), 0 0 24px hsl(217 91% 50% / 0.08);
+    --neon-glow-strong: 0 0 12px hsl(217 91% 50% / 0.3), 0 0 30px hsl(217 91% 50% / 0.15);
+    --neon-glow-purple: 0 0 12px hsl(262 83% 50% / 0.2), 0 0 24px hsl(262 83% 50% / 0.08);
+    --glass-bg: hsl(220 20% 99% / 0.8);
+    --glass-border: hsl(220 15% 85% / 0.6);
+    --glass-hover: hsl(220 20% 97% / 0.95);
   }
 }
 
@@ -137,9 +136,17 @@
     text-shadow: 0 0 10px hsl(var(--neon-blue) / 0.5);
   }
 
+  .light .neon-text {
+    text-shadow: none;
+  }
+
   .neon-text-purple {
     color: hsl(var(--neon-purple));
     text-shadow: 0 0 10px hsl(var(--neon-purple) / 0.5);
+  }
+
+  .light .neon-text-purple {
+    text-shadow: none;
   }
 
   .neon-button {

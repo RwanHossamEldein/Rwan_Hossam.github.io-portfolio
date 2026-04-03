@@ -3,7 +3,7 @@ import ParticleBackground from "@/components/ParticleBackground";
 import ScrollProgress from "@/components/ScrollProgress";
 import BackToTop from "@/components/BackToTop";
 import Loader from "@/components/Loader";
-import ThemeToggle from "@/components/ThemeToggle";
+
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import SkillsSection from "@/components/SkillsSection";
@@ -26,7 +26,7 @@ const Index = () => {
       <Loader isLoading={loading} />
       <ScrollProgress />
       <ParticleBackground />
-      <ThemeToggle />
+      
       <div className="relative z-10">
         <HeroSection />
         <AboutSection />

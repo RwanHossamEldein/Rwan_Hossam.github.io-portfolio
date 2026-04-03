@@ -9,15 +9,15 @@ const projects: { category: Category; name: string; description: string; link?: 
   {
     category: "freelance",
     name: "Payss Merchant App",
-    description: "REST API, Riverpod, Clean Architecture",
+    description: "Scalable Flutter merchant application with REST API integration, Riverpod state management, and Clean Architecture design.",
     link: "https://github.com/RwanHossamEldein/payss-merchant-showcase",
   },
-  { category: "personal", name: "Text-to-Speech App (Speak-it-right)", description: "Speech synthesis & recognition" },
-  { category: "personal", name: "Snake Game", description: "Classic game built with Flutter" },
-  { category: "personal", name: "Emotion Recognition System", description: "AI-powered emotion detection" },
-  { category: "personal", name: "Weather App", description: "Real-time weather forecasting" },
-  { category: "personal", name: "ToDo App", description: "Task management application" },
-  { category: "course", name: "LingoSign App", description: "Sign language learning application" },
+  { category: "personal", name: "Text-to-Speech App (Speak-it-right)", description: "Speech synthesis & recognition", link: "https://github.com/RwanHossamEldein/Speak-it-right" },
+  { category: "personal", name: "Snake Game", description: "Classic game built with Flutter", link: "https://github.com/RwanHossamEldein/snake-game" },
+  { category: "personal", name: "Emotion Recognition System", description: "AI-powered emotion detection", link: "https://github.com/RwanHossamEldein/Recognizing-human_facial_expressions" },
+  { category: "personal", name: "Weather App", description: "Real-time weather forecasting", link: "https://github.com/RwanHossamEldein/Weather-App" },
+  { category: "personal", name: "ToDayDo App", description: "Task management application", link: "https://github.com/RwanHossamEldein/ToDayDo" },
+  { category: "course", name: "LingoSign App", description: "Sign language learning application", link: "https://github.com/RwanHossamEldein/Lingo-Sign" },
 ];
 
 const tabs: { key: Category; label: string }[] = [
@@ -28,6 +28,8 @@ const tabs: { key: Category; label: string }[] = [
 
 const ProjectsSection = () => {
   const [active, setActive] = useState<Category>("freelance");
+  const filtered = projects.filter((p) => p.category === active);
+  const isSingle = filtered.length === 1;
 
   return (
     <SectionWrapper id="projects">
@@ -51,10 +53,8 @@ const ProjectsSection = () => {
           ))}
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
-          {projects
-            .filter((p) => p.category === active)
-            .map((p, i) => (
+        <div className={`grid gap-6 max-w-5xl mx-auto ${isSingle ? "sm:grid-cols-1 max-w-md" : "sm:grid-cols-2 lg:grid-cols-3"}`}>
+          {filtered.map((p, i) => (
               <motion.div
                 key={p.name}
                 className="glass-card rounded-2xl p-6 flex flex-col"

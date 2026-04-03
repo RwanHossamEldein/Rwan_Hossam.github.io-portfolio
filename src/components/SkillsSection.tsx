@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import SectionWrapper from "./SectionWrapper";
 
 const skillGroups = [
-  { title: "Programming", items: ["Dart", "Python", "Go", "Java"] },
-  { title: "Mobile", items: ["Flutter", "Firebase"] },
-  { title: "State Management", items: ["Riverpod", "Provider", "BLoC"] },
-  { title: "Architecture", items: ["MVC", "MVP", "MVVM", "Clean Architecture"] },
-  { title: "Tools", items: ["Git", "GitHub"] },
+  { title: "Programming Languages", items: ["Dart", "Python", "Go", "Java"], accent: false },
+  { title: "Mobile", items: ["Flutter", "Firebase"], accent: true },
+  { title: "State Management", items: ["Riverpod", "Provider", "BLoC"], accent: false },
+  { title: "Architecture", items: ["MVC", "MVP", "MVVM", "Clean Architecture"], accent: true },
+  { title: "Tools", items: ["Git", "GitHub"], accent: false },
 ];
 
 const SkillsSection = () => (
@@ -27,7 +27,9 @@ const SkillsSection = () => (
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
           >
-            <h3 className="font-semibold text-lg mb-4 neon-text">{group.title}</h3>
+            <h3 className={`font-semibold text-lg mb-4 ${group.accent ? "neon-text-purple" : "neon-text"}`}>
+              {group.title}
+            </h3>
             <div className="flex flex-wrap gap-2">
               {group.items.map((item) => (
                 <span

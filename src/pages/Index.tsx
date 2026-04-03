@@ -26,7 +26,7 @@ const Index = () => {
       <Loader isLoading={loading} />
       <ScrollProgress />
       <ParticleBackground />
-      <ThemeToggle />
+      
       <div className="relative z-10">
         <HeroSection />
         <AboutSection />

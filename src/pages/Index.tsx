@@ -3,12 +3,13 @@ import ParticleBackground from "@/components/ParticleBackground";
 import ScrollProgress from "@/components/ScrollProgress";
 import BackToTop from "@/components/BackToTop";
 import Loader from "@/components/Loader";
+import ThemeToggle from "@/components/ThemeToggle";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import AchievementsSection from "@/components/AchievementsSection";
-import TrainingSection from "@/components/TrainingSection";
+import VolunteerSection from "@/components/VolunteerSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -25,13 +26,14 @@ const Index = () => {
       <Loader isLoading={loading} />
       <ScrollProgress />
       <ParticleBackground />
+      <ThemeToggle />
       <div className="relative z-10">
         <HeroSection />
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
         <AchievementsSection />
-        <TrainingSection />
+        <VolunteerSection />
         <ContactSection />
         <Footer />
       </div>

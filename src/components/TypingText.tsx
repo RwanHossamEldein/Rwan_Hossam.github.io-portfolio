@@ -1,5 +1,11 @@
 import { useState, useEffect } from "react";
 
+const colors = [
+  "hsl(221 83% 53%)",   // neon blue
+  "hsl(271 81% 56%)",   // neon purple
+  "hsl(160 84% 39%)",   // emerald
+];
+
 const TypingText = ({ texts, className = "" }: { texts: string[]; className?: string }) => {
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -30,7 +36,7 @@ const TypingText = ({ texts, className = "" }: { texts: string[]; className?: st
   }, [charIndex, isDeleting, textIndex, texts]);
 
   return (
-    <span className={className}>
+    <span className={className} style={{ color: colors[textIndex % colors.length] }}>
       {texts[textIndex].slice(0, charIndex)}
       <span className="animate-pulse">|</span>
     </span>

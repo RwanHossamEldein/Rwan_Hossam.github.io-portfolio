@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, BookOpen, Download } from "lucide-react";
+import { Github, Linkedin, Mail, Download } from "lucide-react";
 import TypingText from "./TypingText";
 import FlutterLogo from "./FlutterLogo";
 import profileImage from "@/assets/profile.png";
@@ -8,11 +8,17 @@ import profileImage from "@/assets/profile.png";
 const PROFILE_IMAGE = profileImage;
 const CV_LINK = "https://drive.google.com/file/d/1UThcMv8R2ovIDyLRfKqgrrYVGdIauv2W/view?usp=sharing";
 
+const MediumIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42S14.2 15.54 14.2 12s1.52-6.42 3.38-6.42 3.38 2.88 3.38 6.42zm2.94 0c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75c.66 0 1.19 2.58 1.19 5.75z" />
+  </svg>
+);
+
 const socials = [
   { icon: Github, href: "https://github.com/RwanHossamEldein", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/rwan-hossam-08ba39295/", label: "LinkedIn" },
   { icon: Mail, href: "mailto:rwanhossam0@gmail.com", label: "Email" },
-  { icon: BookOpen, href: "https://medium.com/@RwanHossam", label: "Medium" },
+  { icon: MediumIcon, href: "https://medium.com/@RwanHossam", label: "Medium", custom: true },
 ];
 
 const Navbar = () => {
@@ -24,7 +30,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const links = ["about", "skills", "projects", "achievements", "contact"];
+  const links = ["about", "skills", "projects", "achievements", "volunteer", "contact"];
 
   return (
     <motion.nav
@@ -55,14 +61,12 @@ const Navbar = () => {
 
 const HeroSection = () => (
   <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden noise-bg">
-    {/* Floating Flutter logo background */}
     <div className="absolute top-20 right-10 opacity-5 pointer-events-none">
       <FlutterLogo size={300} />
     </div>
 
     <div className="container mx-auto px-6 relative z-10">
       <div className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-20">
-        {/* Text */}
         <motion.div
           className="flex-1 text-center md:text-left"
           initial={{ opacity: 0, x: -40 }}
@@ -71,8 +75,7 @@ const HeroSection = () => (
         >
           <p className="font-mono text-sm text-muted-foreground mb-3">Hello, I'm</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-4">
-            Rwan Hossam<br />
-            <span className="neon-text">Eldein</span>
+            Rwan <span className="neon-text">Hossam</span>
           </h1>
           <div className="h-8 mb-6">
             <TypingText
@@ -81,10 +84,10 @@ const HeroSection = () => (
                 "Cross-Platform Mobile Apps",
                 "Clean Architecture Enthusiast",
               ]}
-              className="font-mono text-lg text-muted-foreground"
+              className="font-mono text-lg"
             />
           </div>
-          <p className="text-muted-foreground max-w-md mb-8 leading-relaxed">
+          <p className="text-muted-foreground max-w-md mb-8 leading-relaxed mx-auto md:mx-0">
             I build scalable and user-friendly mobile applications.
           </p>
 
@@ -123,7 +126,6 @@ const HeroSection = () => (
           </div>
         </motion.div>
 
-        {/* Profile Image */}
         <motion.div
           className="relative"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -134,8 +136,8 @@ const HeroSection = () => (
             <div className="relative w-56 h-56 sm:w-72 sm:h-72 rounded-full overflow-hidden neon-border animate-neon-pulse">
               <img
                 src={PROFILE_IMAGE}
-                alt="Rwan Hossam Eldein"
-                className="w-full h-full object-cover object-[center_20%]"
+                alt="Rwan Hossam"
+                className="w-full h-full object-cover object-[center_30%]"
               />
             </div>
           </div>

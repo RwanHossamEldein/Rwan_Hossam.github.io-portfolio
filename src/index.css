@@ -6,93 +6,93 @@
 
 @layer base {
   :root {
-    --background: 20 14% 4%;
-    --foreground: 30 10% 90%;
+    --background: 222 30% 5%;
+    --foreground: 210 20% 90%;
 
-    --card: 20 10% 7%;
-    --card-foreground: 30 10% 90%;
+    --card: 222 25% 8%;
+    --card-foreground: 210 20% 90%;
 
-    --popover: 20 10% 7%;
-    --popover-foreground: 30 10% 90%;
+    --popover: 222 25% 8%;
+    --popover-foreground: 210 20% 90%;
 
-    --primary: 25 95% 53%;
+    --primary: 217 91% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 35 100% 50%;
+    --secondary: 230 70% 42%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 20 8% 13%;
-    --muted-foreground: 25 8% 52%;
+    --muted: 222 20% 12%;
+    --muted-foreground: 215 15% 50%;
 
-    --accent: 25 95% 53%;
+    --accent: 217 91% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 20 8% 16%;
-    --input: 20 8% 16%;
-    --ring: 25 95% 53%;
+    --border: 222 18% 14%;
+    --input: 222 18% 14%;
+    --ring: 217 91% 50%;
 
     --radius: 0.75rem;
 
-    --neon-blue: 25 95% 53%;
-    --neon-purple: 35 100% 50%;
-    --neon-glow: 0 0 20px hsl(25 95% 53% / 0.35), 0 0 40px hsl(25 95% 53% / 0.15);
-    --neon-glow-strong: 0 0 20px hsl(25 95% 53% / 0.5), 0 0 60px hsl(25 95% 53% / 0.25), 0 0 100px hsl(25 95% 53% / 0.08);
-    --neon-glow-purple: 0 0 20px hsl(35 100% 50% / 0.35), 0 0 40px hsl(35 100% 50% / 0.15);
-    --glass-bg: hsl(20 10% 7% / 0.7);
-    --glass-border: hsl(20 8% 20% / 0.5);
-    --glass-hover: hsl(20 10% 10% / 0.85);
-    --surface-dark: 20 14% 3%;
+    --neon-blue: 217 91% 50%;
+    --neon-purple: 245 58% 58%;
+    --neon-glow: 0 0 20px hsl(217 91% 50% / 0.35), 0 0 40px hsl(217 91% 50% / 0.15);
+    --neon-glow-strong: 0 0 20px hsl(217 91% 50% / 0.5), 0 0 60px hsl(217 91% 50% / 0.25), 0 0 100px hsl(217 91% 50% / 0.08);
+    --neon-glow-purple: 0 0 20px hsl(245 58% 58% / 0.35), 0 0 40px hsl(245 58% 58% / 0.15);
+    --glass-bg: hsl(222 25% 8% / 0.7);
+    --glass-border: hsl(222 18% 18% / 0.5);
+    --glass-hover: hsl(222 25% 11% / 0.85);
+    --surface-dark: 222 30% 3%;
 
-    --sidebar-background: 20 14% 4%;
-    --sidebar-foreground: 30 10% 90%;
-    --sidebar-primary: 25 95% 53%;
+    --sidebar-background: 222 30% 5%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 217 91% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 20 8% 13%;
-    --sidebar-accent-foreground: 30 10% 90%;
-    --sidebar-border: 20 8% 16%;
-    --sidebar-ring: 25 95% 53%;
+    --sidebar-accent: 222 20% 12%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 222 18% 14%;
+    --sidebar-ring: 217 91% 50%;
   }
 
   .light {
-    --background: 40 30% 97%;
-    --foreground: 20 20% 15%;
+    --background: 220 20% 96%;
+    --foreground: 222 25% 15%;
 
-    --card: 40 25% 99%;
-    --card-foreground: 20 20% 15%;
+    --card: 220 20% 99%;
+    --card-foreground: 222 25% 15%;
 
-    --popover: 40 25% 99%;
-    --popover-foreground: 20 20% 15%;
+    --popover: 220 20% 99%;
+    --popover-foreground: 222 25% 15%;
 
-    --primary: 25 90% 48%;
+    --primary: 217 85% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 35 95% 45%;
+    --secondary: 230 65% 38%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 35 15% 92%;
-    --muted-foreground: 20 10% 40%;
+    --muted: 220 15% 91%;
+    --muted-foreground: 220 10% 40%;
 
-    --accent: 25 90% 48%;
+    --accent: 217 85% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 35 15% 87%;
-    --input: 35 15% 87%;
-    --ring: 25 90% 48%;
+    --border: 220 15% 87%;
+    --input: 220 15% 87%;
+    --ring: 217 85% 45%;
 
-    --neon-blue: 25 90% 48%;
-    --neon-purple: 35 95% 45%;
-    --neon-glow: 0 0 12px hsl(25 90% 48% / 0.18), 0 0 24px hsl(25 90% 48% / 0.06);
-    --neon-glow-strong: 0 0 12px hsl(25 90% 48% / 0.25), 0 0 30px hsl(25 90% 48% / 0.12);
-    --neon-glow-purple: 0 0 12px hsl(35 95% 45% / 0.18), 0 0 24px hsl(35 95% 45% / 0.06);
-    --glass-bg: hsl(40 25% 99% / 0.8);
-    --glass-border: hsl(35 15% 85% / 0.6);
-    --glass-hover: hsl(40 25% 97% / 0.95);
+    --neon-blue: 217 85% 45%;
+    --neon-purple: 245 50% 50%;
+    --neon-glow: 0 0 12px hsl(217 85% 45% / 0.18), 0 0 24px hsl(217 85% 45% / 0.06);
+    --neon-glow-strong: 0 0 12px hsl(217 85% 45% / 0.25), 0 0 30px hsl(217 85% 45% / 0.12);
+    --neon-glow-purple: 0 0 12px hsl(245 50% 50% / 0.18), 0 0 24px hsl(245 50% 50% / 0.06);
+    --glass-bg: hsl(220 20% 99% / 0.8);
+    --glass-border: hsl(220 15% 85% / 0.6);
+    --glass-hover: hsl(220 20% 97% / 0.95);
   }
 }
 

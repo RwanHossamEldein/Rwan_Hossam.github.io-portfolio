@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
+import Lottie from "lottie-react";
 import SectionWrapper from "./SectionWrapper";
+import educationAnim from "@/assets/lottie/education.json";
 
 const EducationSection = () => (
   <SectionWrapper id="education">
@@ -11,21 +13,24 @@ const EducationSection = () => (
       <div className="w-16 h-1 mx-auto mb-10 rounded-full bg-primary" />
 
       <motion.div
-        className="glass-card rounded-2xl p-8 md:p-10 flex items-start gap-6"
+        className="glass-card rounded-2xl p-8 md:p-10 flex flex-col sm:flex-row items-center gap-6"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <div className="shrink-0 rounded-full p-3 bg-primary/10 border border-primary/20">
-          <GraduationCap className="h-8 w-8 text-primary" />
+        <div className="shrink-0 w-32 h-32">
+          <Lottie animationData={educationAnim} loop />
         </div>
-        <div>
-          <h3 className="text-xl font-bold mb-1">Bachelor of Science in Computer Science</h3>
+        <div className="text-center sm:text-left">
+          <div className="flex items-center gap-2 justify-center sm:justify-start mb-2">
+            <GraduationCap className="h-6 w-6 text-primary" />
+            <h3 className="text-xl font-bold">Bachelor of Science in Computer Science</h3>
+          </div>
           <p className="text-primary font-semibold mb-2">Faculty of Science — Alexandria University</p>
           <p className="text-muted-foreground text-sm leading-relaxed">
             Studying core computer science fundamentals including data structures, algorithms,
-            software engineering, and mobile application development.
+            and software engineering.
           </p>
         </div>
       </motion.div>

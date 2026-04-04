@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import Lottie from "lottie-react";
 import SectionWrapper from "./SectionWrapper";
+import projectsAnim from "@/assets/lottie/projects.json";
 
 type Category = "freelance" | "personal" | "course";
 
@@ -34,10 +36,15 @@ const ProjectsSection = () => {
   return (
     <SectionWrapper id="projects">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
-          My <span className="neon-text">Projects</span>
-        </h2>
-        <div className="w-16 h-1 mx-auto mb-10 rounded-full bg-primary" />
+        <div className="flex flex-col items-center mb-10">
+          <div className="w-20 h-20 mb-4">
+            <Lottie animationData={projectsAnim} loop />
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+            My <span className="neon-text">Projects</span>
+          </h2>
+          <div className="w-16 h-1 rounded-full bg-primary" />
+        </div>
 
         <div className="flex justify-center gap-3 mb-10">
           {tabs.map((t) => (

@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Award, ExternalLink, Atom } from "lucide-react";
+import Lottie from "lottie-react";
 import SectionWrapper from "./SectionWrapper";
+import achievementsAnim from "@/assets/lottie/achievements.json";
 
 const achievements: { name: string; link: string }[] = [
   { name: "DEPI Top Student", link: "https://drive.google.com/file/d/1AfgaEmZ274virXbH66g_Q_invji5nUcE/view?usp=sharing" },
@@ -20,10 +22,15 @@ const quantumCerts = [
 const AchievementsSection = () => (
   <SectionWrapper id="achievements">
     <div className="container mx-auto px-6">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
-        Achievements & <span className="neon-text">Certifications</span>
-      </h2>
-      <div className="w-16 h-1 mx-auto mb-12 rounded-full bg-primary" />
+      <div className="flex flex-col items-center mb-12">
+        <div className="w-20 h-20 mb-4">
+          <Lottie animationData={achievementsAnim} loop />
+        </div>
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+          Achievements & <span className="neon-text">Certifications</span>
+        </h2>
+        <div className="w-16 h-1 rounded-full bg-primary" />
+      </div>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto mb-10">
         {achievements.map((a, i) => (

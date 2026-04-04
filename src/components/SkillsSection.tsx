@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
+import Lottie from "lottie-react";
 import SectionWrapper from "./SectionWrapper";
+import skillsAnim from "@/assets/lottie/skills.json";
 
 const skillGroups = [
   { title: "Programming Languages", items: ["Dart", "Python", "Go", "Java"], accent: false },
@@ -12,10 +14,15 @@ const skillGroups = [
 const SkillsSection = () => (
   <SectionWrapper id="skills">
     <div className="container mx-auto px-6">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
-        My <span className="neon-text">Skills</span>
-      </h2>
-      <div className="w-16 h-1 mx-auto mb-12 rounded-full bg-primary" />
+      <div className="flex flex-col items-center mb-12">
+        <div className="w-20 h-20 mb-4">
+          <Lottie animationData={skillsAnim} loop />
+        </div>
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+          My <span className="neon-text">Skills</span>
+        </h2>
+        <div className="w-16 h-1 rounded-full bg-primary" />
+      </div>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
         {skillGroups.map((group, i) => (

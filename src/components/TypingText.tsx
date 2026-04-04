@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 const colors = [
-  "hsl(221 83% 53%)",   // neon blue
-  "hsl(271 81% 56%)",   // neon purple
-  "hsl(160 84% 39%)",   // emerald
+  "hsl(25 95% 53%)",   // amber/orange
+  "hsl(35 100% 50%)",  // golden
+  "hsl(15 90% 55%)",   // warm coral
 ];
 
 const TypingText = ({ texts, className = "" }: { texts: string[]; className?: string }) => {

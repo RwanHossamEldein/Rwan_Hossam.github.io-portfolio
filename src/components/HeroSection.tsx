@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Download, Moon, Sun } from "lucide-react";
-import Lottie from "lottie-react";
 import TypingText from "./TypingText";
 import FlutterLogo from "./FlutterLogo";
 import profileImage from "@/assets/profile.png";
-import heroAnimation from "@/assets/lottie/hero.json";
 
 const PROFILE_IMAGE = profileImage;
 const CV_LINK = "https://drive.google.com/file/d/1UThcMv8R2ovIDyLRfKqgrrYVGdIauv2W/view?usp=sharing";

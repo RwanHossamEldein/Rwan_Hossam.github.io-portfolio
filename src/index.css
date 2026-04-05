@@ -84,10 +84,8 @@
     --ring: 217 85% 45%;
 
     --neon-blue: 217 85% 45%;
-    --neon-purple: 245 50% 50%;
     --neon-glow: 0 0 12px hsl(217 85% 45% / 0.18), 0 0 24px hsl(217 85% 45% / 0.06);
     --neon-glow-strong: 0 0 12px hsl(217 85% 45% / 0.25), 0 0 30px hsl(217 85% 45% / 0.12);
-    --neon-glow-purple: 0 0 12px hsl(245 50% 50% / 0.18), 0 0 24px hsl(245 50% 50% / 0.06);
     --glass-bg: hsl(220 20% 99% / 0.8);
     --glass-border: hsl(220 15% 85% / 0.6);
     --glass-hover: hsl(220 20% 97% / 0.95);

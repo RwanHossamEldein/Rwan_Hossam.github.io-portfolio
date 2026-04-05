@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Download, Moon, Sun } from "lucide-react";
-import Lottie from "lottie-react";
 import TypingText from "./TypingText";
 import FlutterLogo from "./FlutterLogo";
 import profileImage from "@/assets/profile.png";
-import heroAnimation from "@/assets/lottie/hero.json";
 
 const PROFILE_IMAGE = profileImage;
 const CV_LINK = "https://drive.google.com/file/d/1UThcMv8R2ovIDyLRfKqgrrYVGdIauv2W/view?usp=sharing";
@@ -103,8 +101,8 @@ const Navbar = () => {
 
 const HeroSection = () => (
   <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden noise-bg">
-    <div className="absolute bottom-10 right-10 opacity-15 pointer-events-none w-80 h-80 hidden md:block">
-      <Lottie animationData={heroAnimation} loop autoplay />
+    <div className="absolute bottom-10 right-10 opacity-15 pointer-events-none hidden md:block">
+      <FlutterLogo size={120} />
     </div>
 
     <div className="container mx-auto px-6 relative z-10">

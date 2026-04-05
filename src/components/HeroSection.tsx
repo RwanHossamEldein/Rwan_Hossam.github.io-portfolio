@@ -103,7 +103,7 @@ const Navbar = () => {
 
 const HeroSection = () => (
   <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden noise-bg">
-    <div className="absolute top-20 right-10 opacity-10 pointer-events-none w-72 h-72">
+    <div className="absolute bottom-10 right-10 opacity-15 pointer-events-none w-80 h-80 hidden md:block">
       <Lottie animationData={heroAnimation} loop autoplay />
     </div>
 

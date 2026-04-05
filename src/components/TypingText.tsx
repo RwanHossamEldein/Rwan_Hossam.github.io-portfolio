@@ -1,11 +1,5 @@
 import { useState, useEffect } from "react";
 
-const colors = [
-  "hsl(217 91% 60%)",   // bright blue
-  "hsl(245 58% 65%)",   // purple
-  "hsl(190 80% 50%)",   // cyan
-];
-
 const TypingText = ({ texts, className = "" }: { texts: string[]; className?: string }) => {
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -34,6 +28,12 @@ const TypingText = ({ texts, className = "" }: { texts: string[]; className?: st
     );
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, textIndex, texts]);
+
+  // Alternate between blue and foreground (white in dark, black in light)
+  const colors = [
+    "hsl(var(--primary))",
+    "hsl(var(--foreground))",
+  ];
 
   return (
     <span className={className} style={{ color: colors[textIndex % colors.length] }}>

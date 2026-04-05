@@ -8,7 +8,7 @@ const VolunteerSection = () => (
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
         Volunteer <span className="neon-text-purple">Experience</span>
       </h2>
-      <div className="w-16 h-1 mx-auto mb-10 rounded-full" style={{ background: "hsl(271 81% 56%)" }} />
+      <div className="w-16 h-1 mx-auto mb-10 rounded-full bg-primary" />
 
       <motion.div
         className="glass-card rounded-2xl p-8 md:p-10"

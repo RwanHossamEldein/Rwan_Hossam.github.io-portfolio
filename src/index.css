@@ -137,8 +137,8 @@
   }
 
   .neon-text-purple {
-    color: hsl(var(--neon-purple));
-    text-shadow: 0 0 10px hsl(var(--neon-purple) / 0.5);
+    color: hsl(var(--neon-blue));
+    text-shadow: 0 0 10px hsl(var(--neon-blue) / 0.5);
   }
 
   .light .neon-text-purple {

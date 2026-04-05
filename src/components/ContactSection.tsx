@@ -1,7 +1,6 @@
 import { useState, useRef, FormEvent } from "react";
 import { motion } from "framer-motion";
 import { Send, CheckCircle, AlertCircle } from "lucide-react";
-import emailjs from "@emailjs/browser";
 import SectionWrapper from "./SectionWrapper";
 
 const ContactSection = () => {
@@ -32,13 +31,12 @@ const ContactSection = () => {
 
     setStatus("loading");
     try {
-      // Replace these with your actual EmailJS service/template/public key
-      await emailjs.sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        form,
-        "YOUR_PUBLIC_KEY"
-      );
+      const res = await fetch("https://formsubmit.co/ajax/rwanhossam0@gmail.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+      if (!res.ok) throw new Error("Failed");
       setStatus("success");
       form.reset();
     } catch {

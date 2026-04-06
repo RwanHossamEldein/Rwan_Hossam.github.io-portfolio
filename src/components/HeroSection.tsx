@@ -101,10 +101,6 @@ const Navbar = () => {
 
 const HeroSection = () => (
   <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden noise-bg">
-    <div className="absolute bottom-10 right-10 opacity-15 pointer-events-none hidden md:block">
-      <FlutterLogo size={120} />
-    </div>
-
     <div className="container mx-auto px-6 relative z-10">
       <div className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-20">
         <motion.div

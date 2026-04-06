@@ -5,6 +5,7 @@ import SectionWrapper from "./SectionWrapper";
 import achievementsAnim from "@/assets/lottie/achievements.json";
 
 const achievements: { name: string; link: string }[] = [
+  { name: "Business English (DEPI - OTO Courses)", link: "https://drive.google.com/file/d/1LohZibeZf0o0k_ZGe_OtQCyC7nADxN3F/view?usp=sharing" },
   { name: "DEPI Top Student", link: "https://drive.google.com/file/d/1AfgaEmZ274virXbH66g_Q_invji5nUcE/view?usp=sharing" },
   { name: "DEPI Graduation", link: "https://drive.google.com/file/d/1-gETwrs5oo-79scn1f1nJ-P1dAUp5OqH/view?usp=sharing" },
   { name: "HackerRank Best Mentor", link: "https://drive.google.com/file/d/1r2uehS_Rny13dggbXGYgNG4nRQ7dYR0A/view?usp=sharing" },
@@ -12,7 +13,6 @@ const achievements: { name: string; link: string }[] = [
   { name: "AI & Machine Learning (Microsoft & Sprints)", link: "https://drive.google.com/file/d/1hMPkl2pxovzfTpZxrrsiqh5r-MnbieqC/view?usp=sharing" },
   { name: "Cloud Computing (Creativa Hub Alexandria)", link: "https://drive.google.com/file/d/1FN4L8voxn4-WCswFL1XZSeSZsh1-pt-l/view?usp=sharing" },
   { name: "Flutter Development (Sprints)", link: "https://drive.google.com/file/d/1U4PtxtwRm4gdb94qe_vQ_FZbJ4Nxu0nn/view?usp=sharing" },
-  { name: "Business English (DEPI - OTO Courses)", link: "https://drive.google.com/file/d/1LohZibeZf0o0k_ZGe_OtQCyC7nADxN3F/view?usp=sharing" },
 ];
 
 const quantumCerts = [

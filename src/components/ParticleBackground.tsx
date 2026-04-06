@@ -33,8 +33,8 @@ const ParticleBackground = () => {
         vx: (Math.random() - 0.5) * 0.2,
         vy: (Math.random() - 0.5) * 0.2,
         text: CODE_SYMBOLS[Math.floor(Math.random() * CODE_SYMBOLS.length)],
-        opacity: Math.random() * 0.12 + 0.03,
-        size: Math.random() * 10 + 10,
+        opacity: Math.random() * 0.25 + 0.08,
+        size: Math.random() * 12 + 12,
         rotation: Math.random() * Math.PI * 2,
         rotSpeed: (Math.random() - 0.5) * 0.005,
       });
@@ -49,7 +49,7 @@ const ParticleBackground = () => {
         vx: (Math.random() - 0.5) * 0.3,
         vy: (Math.random() - 0.5) * 0.3,
         size: Math.random() * 1.5 + 0.5,
-        opacity: Math.random() * 0.2 + 0.05,
+        opacity: Math.random() * 0.35 + 0.1,
       });
     }
 
@@ -101,7 +101,7 @@ const ParticleBackground = () => {
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
             ctx.lineTo(b.x, b.y);
-            ctx.strokeStyle = `rgba(37, 99, 235, ${0.04 * (1 - dist / 150)})`;
+            ctx.strokeStyle = `rgba(37, 99, 235, ${0.12 * (1 - dist / 150)})`;
             ctx.stroke();
           }
         });

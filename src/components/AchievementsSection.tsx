@@ -12,6 +12,7 @@ const achievements: { name: string; link: string }[] = [
   { name: "AI & Machine Learning (Microsoft & Sprints)", link: "https://drive.google.com/file/d/1hMPkl2pxovzfTpZxrrsiqh5r-MnbieqC/view?usp=sharing" },
   { name: "Cloud Computing (Creativa Hub Alexandria)", link: "https://drive.google.com/file/d/1FN4L8voxn4-WCswFL1XZSeSZsh1-pt-l/view?usp=sharing" },
   { name: "Flutter Development (Sprints)", link: "https://drive.google.com/file/d/1U4PtxtwRm4gdb94qe_vQ_FZbJ4Nxu0nn/view?usp=sharing" },
+  { name: "Business English (DEPI - OTO Courses)", link: "https://drive.google.com/file/d/1LohZibeZf0o0k_ZGe_OtQCyC7nADxN3F/view?usp=sharing" },
 ];
 
 const quantumCerts = [

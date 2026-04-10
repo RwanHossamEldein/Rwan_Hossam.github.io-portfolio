@@ -6,7 +6,7 @@ import FlutterLogo from "./FlutterLogo";
 import profileImage from "@/assets/profile.png";
 
 const PROFILE_IMAGE = profileImage;
-const CV_LINK = "https://drive.google.com/file/d/1UThcMv8R2ovIDyLRfKqgrrYVGdIauv2W/view?usp=sharing";
+const CV_LINK = "https://drive.google.com/file/d/1XGuDZ8KHGnsxD0HtzOnpDscsNKNHiSKn/view?usp=sharing";
 
 const MediumIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">

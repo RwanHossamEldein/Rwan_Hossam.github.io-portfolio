@@ -7,12 +7,13 @@ import projectsAnim from "@/assets/lottie/projects.json";
 
 type Category = "freelance" | "personal" | "course";
 
-const projects: { category: Category; name: string; description: string; link?: string }[] = [
+const projects: { category: Category; name: string; description: string; link?: string; playStoreLink?: string }[] = [
   {
     category: "freelance",
     name: "Payss Merchant App",
     description: "Scalable Flutter merchant application with REST API integration, Riverpod state management, and Clean Architecture design.",
     link: "https://github.com/RwanHossamEldein/payss-merchant-showcase",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.payss.merchant",
   },
   { category: "personal", name: "Text-to-Speech App (Speak-it-right)", description: "Speech synthesis & recognition", link: "https://github.com/RwanHossamEldein/Speak-it-right" },
   { category: "personal", name: "Snake Game", description: "Classic game built with Flutter", link: "https://github.com/RwanHossamEldein/snake-game" },

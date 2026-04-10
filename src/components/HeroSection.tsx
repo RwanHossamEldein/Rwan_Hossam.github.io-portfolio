@@ -173,7 +173,7 @@ const HeroSection = () => (
               <img
                 src={PROFILE_IMAGE}
                 alt="Rwan Hossam"
-                className="w-full h-full object-cover object-[40%_15%]"
+                className="w-full h-full object-cover object-[28%_15%]"
               />
             </div>
           </div>

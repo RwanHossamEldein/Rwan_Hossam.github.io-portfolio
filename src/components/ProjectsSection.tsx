@@ -7,12 +7,13 @@ import projectsAnim from "@/assets/lottie/projects.json";
 
 type Category = "freelance" | "personal" | "course";
 
-const projects: { category: Category; name: string; description: string; link?: string }[] = [
+const projects: { category: Category; name: string; description: string; link?: string; playStoreLink?: string }[] = [
   {
     category: "freelance",
     name: "Payss Merchant App",
     description: "Scalable Flutter merchant application with REST API integration, Riverpod state management, and Clean Architecture design.",
     link: "https://github.com/RwanHossamEldein/payss-merchant-showcase",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.payss.merchant",
   },
   { category: "personal", name: "Text-to-Speech App (Speak-it-right)", description: "Speech synthesis & recognition", link: "https://github.com/RwanHossamEldein/Speak-it-right" },
   { category: "personal", name: "Snake Game", description: "Classic game built with Flutter", link: "https://github.com/RwanHossamEldein/snake-game" },
@@ -79,6 +80,16 @@ const ProjectsSection = () => {
                     className="inline-flex items-center gap-1.5 mt-4 text-sm neon-text hover:underline"
                   >
                     View on GitHub <ExternalLink className="h-3.5 w-3.5" />
+                  </a>
+                )}
+                {p.playStoreLink && (
+                  <a
+                    href={p.playStoreLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 mt-2 text-sm neon-text hover:underline"
+                  >
+                    Google Play <ExternalLink className="h-3.5 w-3.5" />
                   </a>
                 )}
               </motion.div>

@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+
+const GooglePlayIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.395 12l2.303-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z" />
+  </svg>
+);
 import Lottie from "lottie-react";
 import SectionWrapper from "./SectionWrapper";
 import projectsAnim from "@/assets/lottie/projects.json";
@@ -89,7 +95,7 @@ const ProjectsSection = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 mt-2 text-sm neon-text hover:underline"
                   >
-                    Google Play <ExternalLink className="h-3.5 w-3.5" />
+                    Google Play <GooglePlayIcon className="h-4 w-4" />
                   </a>
                 )}
               </motion.div>

@@ -82,6 +82,16 @@ const ProjectsSection = () => {
                     View on GitHub <ExternalLink className="h-3.5 w-3.5" />
                   </a>
                 )}
+                {p.playStoreLink && (
+                  <a
+                    href={p.playStoreLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 mt-2 text-sm neon-text hover:underline"
+                  >
+                    Google Play <ExternalLink className="h-3.5 w-3.5" />
+                  </a>
+                )}
               </motion.div>
             ))}
         </div>

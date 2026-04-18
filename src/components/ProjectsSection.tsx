@@ -25,6 +25,7 @@ const projects: { category: Category; name: string; description: string; link?: 
     link: "https://github.com/RwanHossamEldein/payss-merchant-showcase",
     playStoreLink: "https://play.google.com/store/apps/details?id=com.payss.merchant",
   },
+  { category: "personal", name: "The-Batman-Runner", description: "A fast-paced 2D Endless Runner game built with Flutter and Flame Engine. Help Batman navigate through Gotham's obstacles, avoid Joker's traps, and survive as long as possible using smooth jumping and flying mechanics.", link: "https://github.com/RwanHossamEldein/The-Batman-Runner" },
   { category: "personal", name: "Text-to-Speech App (Speak-it-right)", description: "Speech synthesis & recognition", link: "https://github.com/RwanHossamEldein/Speak-it-right" },
   { category: "personal", name: "Snake Game", description: "Classic game built with Flutter", link: "https://github.com/RwanHossamEldein/snake-game" },
   { category: "personal", name: "Emotion Recognition System", description: "AI-powered emotion detection", link: "https://github.com/RwanHossamEldein/Recognizing-human_facial_expressions" },

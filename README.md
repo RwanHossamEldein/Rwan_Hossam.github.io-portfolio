@@ -19,7 +19,7 @@ Check out my projects and experience here:
 
 ## 📫 Contact
 - 🔗 [LinkedIn](https://linkedin.com/in/rwan-hossam-08ba39295)
-- 📧 Email: rwanhossam@gmail.com
+- 📧 [Email](mailto:rwanhossam0@gmail.com)
 
 ---
 

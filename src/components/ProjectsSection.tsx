@@ -34,8 +34,8 @@ const projects: Project[] = [
     link: "https://github.com/RwanHossamEldein/payss-merchant-showcase",
     playStoreLink: "https://play.google.com/store/apps/details?id=com.payss.merchant",
   },
+  { category: "personal", name: "HandSprint", description: "An innovative 2D endless runner built with Flutter & Flame, controlled entirely by real-time body gestures via front camera using Google ML Kit Pose Detection.", link: "https://github.com/RwanHossamEldein/HandSprint" },
   { category: "personal", name: "Alphabet-sign-detection", description: "Arabic sign language letter recognition project. I worked on a dataset for Arabic letters, used MediaPipe for landmarks, then trained a Neural Network Model for recognition. I also built a FastAPI endpoint to serve the model and integrated it with TTS packages to read letters out loud. I tested whether model accuracy drops after integration into a website or mobile app and found no significant difference. The project can recognize Arabic sign letters and form words by combining them, but not yet full words from a single gesture. Currently supports English and Arabic, with full Arabic integration coming soon." },
-  { category: "personal", name: "HanSprint", description: "An innovative 2D endless runner built with Flutter & Flame, controlled entirely by real-time body gestures via front camera using Google ML Kit Pose Detection.", link: "https://github.com/RwanHossamEldein/HandSprint" },
   { category: "personal", name: "The-Batman-Runner", description: "A fast-paced 2D Endless Runner game built with Flutter and Flame Engine. Help Batman navigate through Gotham's obstacles, avoid Joker's traps, and survive as long as possible using smooth jumping and flying mechanics.", link: "https://github.com/RwanHossamEldein/The-Batman-Runner" },
   { category: "personal", name: "Text-to-Speech App (Speak-it-right)", description: "Speech synthesis & recognition", link: "https://github.com/RwanHossamEldein/Speak-it-right" },
   { category: "personal", name: "Snake Game", description: "Classic game built with Flutter", link: "https://github.com/RwanHossamEldein/snake-game" },
@@ -121,7 +121,7 @@ const ProjectsSection = () => {
                     </a>
                   )}
                 </div>
-                <span className="text-xs neon-text opacity-80">View →</span>
+                
               </div>
             </motion.div>
           ))}

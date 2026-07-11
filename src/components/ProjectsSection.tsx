@@ -121,7 +121,7 @@ const ProjectsSection = () => {
                     </a>
                   )}
                 </div>
-                <span className="text-xs neon-text opacity-80">View →</span>
+                
               </div>
             </motion.div>
           ))}

@@ -4,15 +4,6 @@ import SectionWrapper from "./SectionWrapper";
 
 const experiences = [
   {
-    role: "Freelance Flutter Developer",
-    company: "",
-    period: "",
-    points: [
-      "Developed and delivered Flutter applications for clients.",
-      "Implemented responsive UI and integrated backend APIs.",
-    ],
-  },
-  {
     role: "Flutter Developer",
     company: "Alphawave",
     period: "1/8/2026 – Present",
@@ -32,6 +23,15 @@ const experiences = [
       "Integrated REST APIs and implemented responsive UI components.",
       "Applied Clean Architecture and state management solutions.",
       "Collaborated with the team using Git and GitHub.",
+    ],
+  },
+  {
+    role: "Freelance Flutter Developer",
+    company: "Self-Employed",
+    period: "",
+    points: [
+      "Developed and delivered Flutter applications for clients.",
+      "Implemented responsive UI and integrated backend APIs.",
     ],
   },
 ];
@@ -58,8 +58,7 @@ const ExperienceSection = () => (
               <Briefcase className="h-6 w-6 neon-text shrink-0 mt-1" />
               <div>
                 <h3 className="text-lg font-bold">
-                  {exp.role}
-                  {exp.company && <span className="text-muted-foreground font-normal"> — {exp.company}</span>}
+                  {exp.role} <span className="text-muted-foreground font-normal">— {exp.company}</span>
                 </h3>
                 {exp.period && <p className="text-sm text-muted-foreground">{exp.period}</p>}
               </div>

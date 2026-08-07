@@ -4,6 +4,15 @@ import SectionWrapper from "./SectionWrapper";
 
 const experiences = [
   {
+    role: "Freelance Flutter Developer",
+    company: "",
+    period: "",
+    points: [
+      "Developed and delivered Flutter applications for clients.",
+      "Implemented responsive UI and integrated backend APIs.",
+    ],
+  },
+  {
     role: "Flutter Developer",
     company: "Alphawave",
     period: "1/8/2026 – Present",
@@ -23,15 +32,6 @@ const experiences = [
       "Integrated REST APIs and implemented responsive UI components.",
       "Applied Clean Architecture and state management solutions.",
       "Collaborated with the team using Git and GitHub.",
-    ],
-  },
-  {
-    role: "Freelance Flutter Developer",
-    company: "Self-Employed",
-    period: "",
-    points: [
-      "Developed and delivered Flutter applications for clients.",
-      "Implemented responsive UI and integrated backend APIs.",
     ],
   },
 ];

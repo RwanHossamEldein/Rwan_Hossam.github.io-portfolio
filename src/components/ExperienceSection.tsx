@@ -58,7 +58,8 @@ const ExperienceSection = () => (
               <Briefcase className="h-6 w-6 neon-text shrink-0 mt-1" />
               <div>
                 <h3 className="text-lg font-bold">
-                  {exp.role} <span className="text-muted-foreground font-normal">— {exp.company}</span>
+                  {exp.role}
+                  {exp.company && <span className="text-muted-foreground font-normal"> — {exp.company}</span>}
                 </h3>
                 {exp.period && <p className="text-sm text-muted-foreground">{exp.period}</p>}
               </div>

@@ -66,7 +66,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const links = ["about", "skills", "projects", "achievements", "volunteer", "contact"];
+  const links = ["about", "experience", "skills", "projects", "achievements", "volunteer", "contact"];
 
   return (
     <motion.nav

@@ -6,7 +6,7 @@ const VolunteerSection = () => (
   <SectionWrapper id="volunteer">
     <div className="container mx-auto px-6 max-w-3xl">
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
-        Volunteer <span className="neon-text-purple">Experience</span>
+        Volunteer <span className="neon-text">Experience</span>
       </h2>
       <div className="w-16 h-1 mx-auto mb-10 rounded-full bg-primary" />
 

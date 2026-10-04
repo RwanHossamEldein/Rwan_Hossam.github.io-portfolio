@@ -11,7 +11,7 @@ const GooglePlayIcon = ({ className }: { className?: string }) => (
     <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.395 12l2.303-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z" />
   </svg>
 );
-import { X } from "lucide-react";
+import { X, Package } from "lucide-react";
 import Lottie from "lottie-react";
 import SectionWrapper from "./SectionWrapper";
 import projectsAnim from "@/assets/lottie/projects.json";
@@ -24,6 +24,7 @@ type Project = {
   description: string;
   link?: string;
   playStoreLink?: string;
+  pubDevLink?: string;
 };
 
 const projects: Project[] = [
@@ -34,6 +35,7 @@ const projects: Project[] = [
     link: "https://github.com/RwanHossamEldein/payss-merchant-showcase",
     playStoreLink: "https://play.google.com/store/apps/details?id=com.payss.merchant",
   },
+  { category: "personal", name: "Reveal Slider", description: "A highly customizable, futuristic, and smooth multi-layer reveal slider widget for Flutter. Transition smoothly between multiple layers or compare widgets with an interactive glowing scanner line. Published as an open-source package on pub.dev.", link: "https://github.com/RwanHossamEldein/Reveal-Slider", pubDevLink: "https://pub.dev/packages/reveal_slider" },
   { category: "personal", name: "HandSprint", description: "An innovative 2D endless runner built with Flutter & Flame, controlled entirely by real-time body gestures via front camera using Google ML Kit Pose Detection.", link: "https://github.com/RwanHossamEldein/HandSprint" },
   { category: "personal", name: "Alphabet-sign-detection", description: "Arabic sign language letter recognition project. I worked on a dataset for Arabic letters, used MediaPipe for landmarks, then trained a Neural Network Model for recognition. I also built a FastAPI endpoint to serve the model and integrated it with TTS packages to read letters out loud. I tested whether model accuracy drops after integration into a website or mobile app and found no significant difference. The project can recognize Arabic sign letters and form words by combining them, but not yet full words from a single gesture. Currently supports English and Arabic, with full Arabic integration coming soon." },
   { category: "personal", name: "The-Batman-Runner", description: "A fast-paced 2D Endless Runner game built with Flutter and Flame Engine. Help Batman navigate through Gotham's obstacles, avoid Joker's traps, and survive as long as possible using smooth jumping and flying mechanics.", link: "https://github.com/RwanHossamEldein/The-Batman-Runner" },
@@ -118,6 +120,16 @@ const ProjectsSection = () => {
                       className="inline-flex items-center gap-1.5 text-sm neon-text hover:underline"
                     >
                       <GooglePlayIcon className="h-5 w-5" /> Play
+                    </a>
+                  )}
+                  {p.pubDevLink && (
+                    <a
+                      href={p.pubDevLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm neon-text hover:underline"
+                    >
+                      <Package className="h-5 w-5" /> pub.dev
                     </a>
                   )}
                 </div>

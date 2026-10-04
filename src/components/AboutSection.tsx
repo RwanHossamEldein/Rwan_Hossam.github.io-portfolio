@@ -17,7 +17,8 @@ const AboutSection = () => (
         transition={{ duration: 0.6 }}
       >
         <p className="text-muted-foreground leading-relaxed text-lg">
-          I'm a Computer Science student specializing in <strong className="text-foreground">Flutter development</strong>.
+          I'm a Computer Science graduate — <strong className="text-foreground">Excellent with Honors</strong> —
+          specializing in <strong className="text-foreground">Flutter development</strong>.
           Passionate about building scalable, high-performance mobile applications with a strong
           focus on <strong className="text-foreground">clean architecture</strong>, thoughtful UX, and pixel-perfect UI.
           I believe in writing maintainable code and delivering products that users love.

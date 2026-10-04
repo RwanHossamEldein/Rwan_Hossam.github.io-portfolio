@@ -27,10 +27,14 @@ const EducationSection = () => (
             <GraduationCap className="h-6 w-6 text-primary" />
             <h3 className="text-xl font-bold">Bachelor of Science in Computer Science</h3>
           </div>
-          <p className="text-primary font-semibold mb-2">Faculty of Science — Alexandria University</p>
+          <p className="text-primary font-semibold mb-3">Faculty of Science — Alexandria University</p>
+          <span className="inline-block rounded-full border border-primary/40 px-3 py-1 text-xs font-semibold text-primary mb-3">
+            Class of 2026 · Excellent with Honors
+          </span>
           <p className="text-muted-foreground text-sm leading-relaxed">
-            Studying core computer science fundamentals including data structures, algorithms,
-            and software engineering.
+            Graduated with <strong className="text-foreground">Excellent with Honors</strong>, having built a
+            strong foundation in core computer science fundamentals including data structures,
+            algorithms, and software engineering.
           </p>
         </div>
       </motion.div>

@@ -188,6 +188,16 @@ const ProjectsSection = () => {
                     <GooglePlayIcon className="h-5 w-5" /> Google Play
                   </a>
                 )}
+                {selected.pubDevLink && (
+                  <a
+                    href={selected.pubDevLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm neon-text hover:underline"
+                  >
+                    <Package className="h-5 w-5" /> pub.dev
+                  </a>
+                )}
               </div>
             </motion.div>
           </motion.div>

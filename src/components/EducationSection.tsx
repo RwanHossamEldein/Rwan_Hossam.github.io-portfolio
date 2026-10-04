@@ -29,7 +29,7 @@ const EducationSection = () => (
           </div>
           <p className="text-primary font-semibold mb-3">Faculty of Science — Alexandria University</p>
           <span className="inline-block rounded-full border border-primary/40 px-3 py-1 text-xs font-semibold text-primary mb-3">
-            2022 – 2026 · Excellent with Honors
+            2022 – 2026
           </span>
           <p className="text-muted-foreground text-sm leading-relaxed">
             Graduated with <strong className="text-foreground">Excellent with Honors</strong>, having built a

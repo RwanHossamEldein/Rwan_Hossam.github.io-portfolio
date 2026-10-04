@@ -17,11 +17,17 @@ const AboutSection = () => (
         transition={{ duration: 0.6 }}
       >
         <p className="text-muted-foreground leading-relaxed text-lg">
-          I'm a Computer Science graduate — <strong className="text-foreground">Excellent with Honors</strong> —
-          specializing in <strong className="text-foreground">Flutter development</strong>.
-          Passionate about building scalable, high-performance mobile applications with a strong
-          focus on <strong className="text-foreground">clean architecture</strong>, thoughtful UX, and pixel-perfect UI.
-          I believe in writing maintainable code and delivering products that users love.
+          <strong className="text-foreground">Computer Science graduate</strong> and{" "}
+          <strong className="text-foreground">Flutter Developer</strong> passionate about building
+          high-quality mobile applications. Experienced in developing cross-platform apps using{" "}
+          <strong className="text-foreground">Flutter and Dart</strong> while applying{" "}
+          <strong className="text-foreground">Clean Architecture, Clean Code, and SOLID principles</strong>{" "}
+          to create scalable and maintainable solutions.
+        </p>
+        <p className="text-muted-foreground leading-relaxed text-lg mt-6">
+          Beyond development, I enjoy writing technical content that simplifies software engineering
+          concepts and helps fellow developers learn and grow. I am always eager to explore new
+          technologies and improve my skills through real-world projects and continuous learning.
         </p>
       </motion.div>
     </div>
